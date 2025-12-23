@@ -1,25 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Happy Birthday 🎉</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      background-color: #ffe6f2;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd6e8, #e0c3fc);
       text-align: center;
-      font-family: Arial, sans-serif;
+      overflow: hidden;
+      color: #333;
     }
+
     h1 {
-      color: #ff1493;
-      font-size: 50px;
+      margin-top: 60px;
+      font-size: 3rem;
+      color: #ff2e88;
     }
+
     p {
-      font-size: 22px;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 15px auto;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 700px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin: 10px;
+    }
+
+    button {
+      background: #ff2e88;
+      color: white;
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Balloons */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 50px;
+      height: 70px;
+      background: pink;
+      border-radius: 50%;
+      animation: float 10s infinite ease-in;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
     }
   </style>
 </head>
+
 <body>
-  <h1>🎂 Happy Birthday! 🎉</h1>
-  <p>Wishing you lots of love, joy, and cake 💖</p>
-  <p>— From me</p>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left:10%; background:#ff9aa2;"></div>
+  <div class="balloon" style="left:30%; background:#ffdac1;"></div>
+  <div class="balloon" style="left:50%; background:#b5ead7;"></div>
+  <div class="balloon" style="left:70%; background:#c7ceea;"></div>
+  <div class="balloon" style="left:90%; background:#f3b0c3;"></div>
+
+  <h1>🎉 Happy Birthday Madamji 🎂</h1>
+
+  <div class="card">
+    <p>
+      Today is all about YOU ✨  
+      Your smile, your strength, your kindness — everything about you makes the world brighter.
+    </p>
+    <p>
+      I hope this year brings you peace, happiness, love, and everything you’ve been quietly wishing for 💖  
+      You deserve so much more than you even realize.
+    </p>
+    <p>
+      Never forget how special you are 🌸  
+      This little website is just a reminder.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>📸 Memories</h2>
+    <img src="https://via.placeholder.com/300" alt="photo1">
+    <img src="https://via.placeholder.com/300" alt="photo2">
+    <img src="https://via.placeholder.com/300" alt="photo3">
+    <p style="font-size:0.9rem;">(You can replace these photos later 💕)</p>
+  </div>
+
+  <div class="card">
+    <h2>🎵 Birthday Music</h2>
+    <button onclick="playMusic()">Play Music 🎶</button>
+  </div>
+
+  <audio id="music" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("music").play();
+    }
+  </script>
+
 </body>
 </html>
