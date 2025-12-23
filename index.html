@@ -75,7 +75,26 @@
     }
   </style>
 </head>
+<button onclick="cutCake()" style="
+  background:#ff2e88;
+  color:white;
+  border:none;
+  padding:12px 24px;
+  border-radius:25px;
+  font-size:16px;
+  cursor:pointer;
+">
+🍰 Cut the Cake
+</button>
 
+<p id="cakeMsg" style="font-size:18px; margin-top:15px;"></p>
+
+<script>
+function cutCake() {
+  document.getElementById("cakeMsg").innerText =
+    "Cake cut 🎉 Wish granted 💖 I love you!";
+}
+</script>
 <body>
 
   <!-- Balloons -->
@@ -107,12 +126,14 @@
   <h2>📸 Memories</h2>
 
   <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px;">
-    <img src="./photo1.jpg.jpeg" style="width:200px; height:auto; border-radius:15px;">
-    <img src="./photo2.jpg.jpeg" style="width:200px; height:auto; border-radius:15px;">
-    <img src="./photo3.jpg.jpeg" style="width:200px; height:auto; border-radius:15px;">
-    <img src="./photo4.jpg.jpeg" style="width:200px; height:auto; border-radius:15px;">
-    <img src="./photo5.jpg.jpeg" style="width:200px; height:auto; border-radius:15px;">
+    <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo1.jpg.jpeg" style="width:200px; border-radius:15px;">
+    <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo2.jpg.jpeg" style="width:200px; border-radius:15px;">
+    <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo3.jpg.jpeg" style="width:200px; border-radius:15px;">
+    <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo4.jpg.jpeg" style="width:200px; border-radius:15px;">
+    <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo5.jpg.jpeg" style="width:200px; border-radius:15px;">
   </div>
+
+</div>
 
 </div>
 
