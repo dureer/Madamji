@@ -127,6 +127,7 @@ function cutCake() {
 <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo3.jpg.jpeg" style="width:220px; margin:10px; border-radius:15px;">
 <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo4.jpg.jpeg" style="width:220px; margin:10px; border-radius:15px;">
 <img src="https://raw.githubusercontent.com/durreer/Madamji/main/photo5.jpg.jpeg" style="width:220px; margin:10px; border-radius:15px;">
+
 </div>
 
   <div class="card">
@@ -155,6 +156,36 @@ function playMusic() {
   document.getElementById("nowPlaying").style.display = "block";
 }
 </script>
+<div class="card" style="text-align:center;">
 
+  <h2>🍰 Birthday Cake</h2>
+
+  <div id="cake" style="font-size:80px; margin:20px;">
+    🎂
+  </div>
+
+  <button onclick="cutCake()" style="
+    background:#ff9f1c;
+    color:white;
+    border:none;
+    padding:12px 26px;
+    border-radius:25px;
+    font-size:18px;
+    cursor:pointer;
+  ">
+    🍰 Cut Cake
+  </button>
+
+  <p id="cakeText" style="display:none; margin-top:15px; color:#ff2e88; font-size:18px;">
+    💖 Happy Birthday, my love! Make a wish 🎉
+  </p>
+
+</div>
+
+<script>
+function cutCake() {
+  document.getElementById("cake").innerHTML = "🍰🍰🍰";
+  document.getElementById("cakeText").style.display = "block";
+}
 </body>
 </html>
